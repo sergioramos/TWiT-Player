@@ -1,1 +1,0 @@
-enyo.depends("source/avis.js","source/shows.js","source/episodes.js","source/controls.js","source/video.js","source/rss.js","libs/xml2json.js","css/avis.css");

@@ -1,0 +1,218 @@
+[
+	{ 
+		"title": "TWiT",
+		"name": "This Week in Tech",
+		"video_url": "http://feeds.twit.tv/twit_video_large",
+		"audio_url": "http://leoville.tv/podcasts/twit.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/twit.jpg"
+	},
+	{ 
+		"title": "Tech News Today",
+		"name": "Tech News Today",
+		"video_url": "http://feeds.twit.tv/tnt_video_large", 
+		"audio_url": "http://leoville.tv/podcasts/tnt.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/tnt.jpg"
+	},
+	{ 
+		"title": "Ham Nation",
+		"name": "Ham Nation",
+		"video_url": "http://feeds.twit.tv/hn_video_large", 
+		"audio_url": "http://leoville.tv/podcasts/hn.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/hn.jpg"
+	},
+	{ 
+		"title": "iPad Today",
+		"name": "iPad Today",
+		"video_url": "http://feeds.twit.tv/ipad_video_large",
+		"audio_url": "http://leoville.tv/podcasts/ipad.xml",
+		"audio": [],
+		"video": [],
+		"favicon":"images/shows/ipad.jpg"
+	},
+	{ 
+		"title": "Green Tech Today",
+		"name": "Green Tech Today",
+		"video_url": "http://feeds.twit.tv/gtt_video_large",
+		"audio_url": "http://leoville.tv/podcasts/gtt.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/gtt.jpg"
+	},
+	{ 
+		"title": "This Week In Google",
+		"name": "This Week In Google",
+		"video_url": "http://feeds.twit.tv/twig_video_large",
+		"audio_url": "http://leoville.tv/podcasts/twig.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/twig.jpg"
+	},
+	{ 
+		"title": "Windows Weekly",
+		"name": "Windows Weekly",
+		"video_url": "http://feeds.twit.tv/ww_video_large",
+		"audio_url": "http://leoville.tv/podcasts/ww.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/ww.jpg"
+	},
+	{ 
+		"title": "MacBreak Weekly",
+		"name": "MacBreak Weekly",
+		"video_url": "http://feeds.twit.tv/mbw_video_large",
+		"audio_url": "http://leoville.tv/podcasts/mbw.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/mbw.jpg"
+	},
+	{ 
+		"title": "Triangulation",
+		"name": "Triangulation",
+		"video_url": "http://feeds.twit.tv/tri_video_large",
+		"audio_url": "http://leoville.tv/podcasts/tri.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/tri.jpg"
+	},
+	{ 
+		"title": "TWiT Photo",
+		"name": "TWiT Photo",
+		"video_url": "http://feeds.twit.tv/photo_video_large",
+		"audio_url": "http://leoville.tv/podcasts/photo.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/photo.jpg"
+	},
+	{ 
+		"title": "FourCast",
+		"name": "FourCast",
+		"video_url": "http://feeds.twit.tv/fc_video_large",
+		"audio_url": "http://leoville.tv/podcasts/fc.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/fc.jpg"
+	},
+	{ 
+		"title": "Leo Laporte - The Tech Guy",
+		"name": "The Tech Guy",
+		"video_url": "http://feeds.twit.tv/ttg_video_large",
+		"audio_url": "http://leoville.tv/podcasts/ttg.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/techguy.jpg"
+	},
+	{ 
+		"title": "All About Android",
+		"name": "All About Android",
+		"video_url": "http://feeds.twit.tv/aaa_video_large",
+		"audio_url": "http://leoville.tv/podcasts/aaa.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/aaa.jpg"
+	},
+	{ 
+		"title": "Security Now",
+		"name": "Security Now",
+		"video_url": "http://feeds.twit.tv/sn_video_large",
+		"audio_url": "http://leoville.tv/podcasts/sn.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/sn.jpg"
+	},
+	{ 
+		"title": "Weekly Daily Giz Wiz",
+		"name": "Weekly Daily Giz Wiz",
+		"video_url": "http://feeds.twit.tv/dgw_video_large",
+		"audio_url": "http://leoville.tv/podcasts/dgw.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/wgw.jpg"
+	},
+	{ 
+		"title": "NSFW",
+		"name": "NSFW",
+		"video_url": "http://feeds.twit.tv/nsfw_video_large",
+		"audio_url": "http://leoville.tv/podcasts/nsfw.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/nsfw.jpg"
+	},
+	{ 
+		"title": "Frame Rate",
+		"name": "Frame Rate",
+		"video_url": "http://feeds.twit.tv/fr_video_large",
+		"audio_url": "http://leoville.tv/podcasts/fr.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/fr.jpg"
+	},
+	{ 
+		"title": "Home Theater Geeks",
+		"name": "Home Theater Geeks",
+		"video_url": "http://feeds.twit.tv/htg_video_large",
+		"audio_url": "http://leoville.tv/podcasts/htg.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/htg.jpg"
+	},
+	{ 
+		"title": "This Week in Computer Hardware",
+		"name": "TWiCH",
+		"video_url": "http://feeds.twit.tv/twich_video_large",
+		"audio_url": "http://leoville.tv/podcasts/twich.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/twich.jpg"
+	},
+	{ 
+		"title": "FLOSS Weekly",
+		"name": "FLOSS Weekly",
+		"video_url": "http://feeds.twit.tv/floss_video_large",
+		"audio_url": "http://leoville.tv/podcasts/floss.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/fw.jpg"
+	},
+	{ 
+		"title": "TWiL",
+		"name": "This Week in Law",
+		"video_url": "http://feeds.twit.tv/twil_video_large",
+		"audio_url": "http://leoville.tv/podcasts/twil.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/twil.jpg"
+	},
+	{ 
+		"title": "TWiT Live Specials",
+		"name": "TWiT Live Specials",
+		"video_url": "http://feeds.twit.tv/specials_video_large",
+		"audio_url": "http://leo.am/podcasts/fib",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/tlspecials.jpg"
+	},
+	{ 
+		"title": "The Social Hour",
+		"name": "The Social Hour",
+		"video_url": "http://feeds.twit.tv/natn_video_large",
+		"audio_url": "http://leoville.tv/podcasts/itn.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/socialhour.jpg"
+	},
+	{ 
+		"title": "Current Geek Weekly",
+		"name": "Current Geek Weekly",
+		"video_url": "http://feeds.twit.tv/cgw_video_large",
+		"audio_url": "http://leoville.tv/podcasts/cgw.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/cgw.jpg"
+	}
+]

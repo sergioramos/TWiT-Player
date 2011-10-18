@@ -123,7 +123,7 @@ enyo.kind({
 	resizeVideo: function() {
 		try {
 			this.$.video.node.width = this.$.videoContainer.getBounds().width;
-			this.$.video.node.height = this.$.videoContainer.getBounds().height;
+			this.$.video.node.height = ((this.$.videoContainer.getBounds().width*480)/864);
 		} catch (e) {}
 	},
 	play: function(inSender, loging) {

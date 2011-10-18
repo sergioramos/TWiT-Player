@@ -1,4 +1,5 @@
 .enyo-bg, body {background-image: url(../images/bg.png);}
+#avis_video_video {background-image: url(../images/bg.png);}
 .progressBar {margin: 20px;}
 .loadingData {color: darkGray;}
 .loadingString {margin-left: 20px;color: darkgray;}

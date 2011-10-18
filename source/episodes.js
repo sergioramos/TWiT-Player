@@ -30,7 +30,6 @@ enyo.kind({
 	},
 	playingShowChanged: function() {
 		this.log(this.playingShow);
-		this.$.list.render();
 		this.$.list.refresh();
 	},
 	selectedShowChanged: function() {
@@ -49,7 +48,6 @@ enyo.kind({
 	},
 	titlesChanged: function() {
 		this.$.showName.setContent(this.showName);
-		this.$.list.render();
 		this.$.list.refresh();
 	},
 	episodeSelected: function(inSender, inEvent) {

@@ -17,7 +17,7 @@ enyo.kind({
 				{width: "25%", kind: "SlidingView", name: "episodesView", components: [
 					{kind: "episodesList", onSelect: "episodeSelected", flex: 1}
 				]},
-				{name: "content", kind: "SlidingView", onResize: "resizeHandler", flex: 1, components: [
+				{name: "content", kind: "SlidingView", onResize: "resizeVideo", flex: 1, components: [
 					{kind: "avis.video", flex: 1}
 				]}
 			]}
@@ -30,6 +30,7 @@ enyo.kind({
 		this.selectedShowRow;
 	},
 	rendered: function() {
+		this.inherited(arguments);
 		this.$.rss.getShows();
 	},
 	unloadHandler: function() {
@@ -73,11 +74,12 @@ enyo.kind({
 	episodeSelected: function(inSender, inRow) {
 		this.$.episodesList.setPlayingShow(this.selectedShowRow);
 		this.$.video.setEpisodeName(this.shows[this.selectedShowRow].video[inRow].title[0].Text);
+		//this.$.
 		try {this.$.video.setVideo(this.shows[this.selectedShowRow].video[inRow].enclosure[0].url);} catch (e) {this.$.video.setVideo("");}
 		try {this.$.video.setAudio(this.shows[this.selectedShowRow].audio[inRow].enclosure[0].url);} catch (e) {this.$.video.setAudio("");}
 		this.$.video.initVideo();
 	},
-	resizeHandler: function() {
+	resizeVideo: function() {
 		this.$.video.resizeVideo();
 	}
 });

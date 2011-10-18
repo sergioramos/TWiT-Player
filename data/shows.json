@@ -36,15 +36,6 @@
 		"favicon":"images/shows/ipad.jpg"
 	},
 	{ 
-		"title": "Green Tech Today",
-		"name": "Green Tech Today",
-		"video_url": "http://feeds.twit.tv/gtt_video_large",
-		"audio_url": "http://leoville.tv/podcasts/gtt.xml",
-		"audio": [],
-		"video": [],
-		"favicon": "images/shows/gtt.jpg"
-	},
-	{ 
 		"title": "This Week In Google",
 		"name": "This Week In Google",
 		"video_url": "http://feeds.twit.tv/twig_video_large",
@@ -207,12 +198,30 @@
 		"favicon": "images/shows/socialhour.jpg"
 	},
 	{ 
-		"title": "Current Geek Weekly",
-		"name": "Current Geek Weekly",
-		"video_url": "http://feeds.twit.tv/cgw_video_large",
-		"audio_url": "http://leoville.tv/podcasts/cgw.xml",
+		"title": "Futures in Biotech",
+		"name": "Futures in Biotech",
+		"video_url": "http://feeds.twit.tv/fib_video_large",
+		"audio_url": "http://leoville.tv/podcasts/fib.xml",
 		"audio": [],
 		"video": [],
-		"favicon": "images/shows/cgw.jpg"
+		"favicon": "images/shows/fib.jpg"
+	},
+	{ 
+		"title": "Tech History Today",
+		"name": "Tech History Today",
+		"video_url": "http://feeds.twit.tv/tht_video_large",
+		"audio_url": "http://leoville.tv/podcasts/tht.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/tht.jpg"
+	},
+	{ 
+		"title": "TWiRT",
+		"name": "This Week in Radio Tech",
+		"video_url": "http://feeds.twit.tv/twirt_video_large",
+		"audio_url": "http://leoville.tv/podcasts/twirt.xml",
+		"audio": [],
+		"video": [],
+		"favicon": "images/shows/twirt.jpg"
 	}
 ]

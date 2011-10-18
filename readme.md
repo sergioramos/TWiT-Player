@@ -6,7 +6,7 @@ All active TWiT shows available in 864x480, 640x368 and audio.
 Still in alpha, it needs feedback. Still too much lags, but almost usable. 
 Need to get a way to stop the screen to dimm while the the episode is playing.
 
-Please send feedback.
+Please send feedback: mail@sergioramos.me
 
 # Known bugs:
 * When the video is resized, it turns black. If the user hit pause and next play, it starts working again

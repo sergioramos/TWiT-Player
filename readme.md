@@ -13,6 +13,8 @@ Please send feedback: mail@sergioramos.me
 
 # [Download](http://dl.dropbox.com/u/286324/me.sergioramos.twitplayer_0.1.0_all.ipk)
 
+# [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ramitosfr%40gmail%2ecom&lc=PT&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+
 # Images:
 ![Loading Landscape](http://f.cl.ly/items/3g2M31180G430a3o0L3u/twitplayer_2011-18-10_223614.png)
 ![Episodes List Landscape](http://dl.dropbox.com/u/286324/twitplayer_2011-18-10_223804.png)

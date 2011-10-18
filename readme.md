@@ -11,7 +11,7 @@ Please send feedback.
 # Known bugs:
 * When the video is resized, it turns black. If the user hit pause and next play, it starts working again
 
-[# Download](http://dl.dropbox.com/u/286324/me.sergioramos.twitplayer_0.1.0_all.ipk)
+# Download [download ipkg](http://dl.dropbox.com/u/286324/me.sergioramos.twitplayer_0.1.0_all.ipk)
 
 # Images:
 ![Loading Landscape](http://f.cl.ly/items/3g2M31180G430a3o0L3u/twitplayer_2011-18-10_223614.png)

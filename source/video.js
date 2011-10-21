@@ -118,6 +118,7 @@ enyo.kind({
 				break;
 		}
 		
+		enyo.windows.setWindowProperties(enyo.windows.getActiveWindow(), {'blockScreenTimeout': true});
 		this.resizeVideo();
 	},
 	resizeVideo: function() {
@@ -129,10 +130,12 @@ enyo.kind({
 	play: function(inSender, loging) {
 		this.$.video.play();
 		if(loging) {this.$.videoControls.setPlaying(true);}
+		enyo.windows.setWindowProperties(enyo.windows.getActiveWindow(), {'blockScreenTimeout': true});
 	},
 	pause: function(inSender, loging) {
 		this.$.video.pause();
 		if(loging) {this.$.videoControls.setPlaying(false);}
+		enyo.windows.setWindowProperties(enyo.windows.getActiveWindow(), {'blockScreenTimeout': false});
 	},
 	changeCurrentTime: function(inSender, inTime) {
 		this.$.video.node.currentTime = inTime;

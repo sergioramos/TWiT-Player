@@ -4,7 +4,6 @@ TWiT-Player 0.1.0
 All active TWiT shows available in 864x480, 640x368 and audio.
 
 Still in alpha, it needs feedback. Still too much lags, but almost usable. 
-Need to get a way to stop the screen to dimm while the the episode is playing.
 
 Please send feedback: mail@sergioramos.me
 

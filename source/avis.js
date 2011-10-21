@@ -33,7 +33,11 @@ enyo.kind({
 		this.inherited(arguments);
 		this.$.rss.getShows();
 	},
+	onWindowDeactivated: function() {
+		enyo.windows.setWindowProperties(enyo.windows.getActiveWindow(), {'blockScreenTimeout': false});
+	},
 	unloadHandler: function() {
+		enyo.windows.setWindowProperties(enyo.windows.getActiveWindow(), {'blockScreenTimeout': false});
 		this.destroy();
 	},
 	setProgressData: function(inSender, inMax) {

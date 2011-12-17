@@ -18,7 +18,7 @@ var XMLObjectifier = (function() {
          function F(){}
          F.prototype = obj;
          return new F();
-      }      
+      }
    };
    //Is Numeric check
    var isNumeric = function(s) {
@@ -41,7 +41,7 @@ var XMLObjectifier = (function() {
          //Trim function
          function trim(s) {
             return s.replace(/^\s+|\s+$/gm,'');
-         }                  
+         }
          //Alters attribute and collection names to comply with JS
          function formatName(name) {
             var regEx = /-/g;
@@ -56,12 +56,12 @@ var XMLObjectifier = (function() {
                obj._attributes = [];
                do { //Order is irrelevant (speed-up)
                   attName = String(formatName(node.attributes[a].name));
-                  obj._attributes.push(attName);            
+                  obj._attributes.push(attName);
                   obj[attName] = trim(node.attributes[a].value);
                } while(a--);
             }
          }
-         
+
          //Node Prototype
          var _node = (function() {
                var _self = {
@@ -146,7 +146,7 @@ var XMLObjectifier = (function() {
                               }
                            };
                            nodes.SortByAttribute = function(col, dir) {
-                              if(!!nodes && nodes.length > 0) {            
+                              if(!!nodes && nodes.length > 0) {
                                  function getValue(pair, idx) {
                                     var out = pair[idx];
                                     out = (bam.validation.isNumeric(out))?parseFloat(out):out;
@@ -192,7 +192,7 @@ var XMLObjectifier = (function() {
                                     out = (bam.validation.isNumeric(out))?parseFloat(out):out;
                                     return out;
                                  }
-                                 function sortFn(a, b) {                              
+                                 function sortFn(a, b) {
                                     var tA, tB;
                                     tA = getValue(a, node);
                                     tB = getValue(b, node);
@@ -213,7 +213,7 @@ var XMLObjectifier = (function() {
          })();
          //Makes a new node of type _node;
          var makeNode = function() {
-            var _fn = _clone(_node);               
+            var _fn = _clone(_node);
             return _fn.activate();
          }
          //Set collections
@@ -234,7 +234,7 @@ var XMLObjectifier = (function() {
                   return false;
                }
             };
-            
+
             grpObj.contains = function(attr, obj) {
                if(this.length > 0) {
                   var maxLen = this.length -1;
@@ -248,7 +248,7 @@ var XMLObjectifier = (function() {
                   return false;
                }
             };
-            
+
             grpObj.indexOf = function(attr, obj) {
                var pos = -1;
                if(this.length > 0) {
@@ -263,9 +263,9 @@ var XMLObjectifier = (function() {
                   return pos;
                }
             };
-            
+
             grpObj.SortByAttribute = function(col, dir) {
-               if(this.length) {            
+               if(this.length) {
                   function getValue(pair, idx) {
                      var out = pair[idx];
                      out = (isNumeric(out))?parseFloat(out):out;
@@ -273,7 +273,7 @@ var XMLObjectifier = (function() {
                   }
                   function sortFn(a, b) {
                      var res = 0;
-                     var tA, tB;                  
+                     var tA, tB;
                      tA = getValue(a, col);
                      tB = getValue(b, col);
                      if(tA < tB) { res = -1;   } else if(tB < tA) { res = 1; }
@@ -285,7 +285,7 @@ var XMLObjectifier = (function() {
                   this.sort(sortFn);
                }
             };
-            
+
             grpObj.SortByValue = function(dir) {
                if(this.length) {
                   function getValue(pair) {
@@ -307,7 +307,7 @@ var XMLObjectifier = (function() {
                   this.sort(sortFn);
                }
             };
-            
+
             grpObj.SortByNode = function(node, dir) {
                if(this.length) {
                   function getValue(pair, node) {
@@ -337,12 +337,12 @@ var XMLObjectifier = (function() {
             var cnode;   //Current Node
             var tObj;   //New subnode
             var cName = "";
-            if(!node) { return null; }            
+            if(!node) { return null; }
             //Set node attributes if any
-            if(node.attributes.length > 0){setAttributes(obj, node);}            
+            if(node.attributes.length > 0){setAttributes(obj, node);}
             obj.Text = "";
             if(node.hasChildNodes()) {
-               var nodeCount = node.childNodes.length - 1;   
+               var nodeCount = node.childNodes.length - 1;
                var n = 0;
                do { //Order is irrelevant (speed-up)
                   cnode = node.childNodes[n];
@@ -366,7 +366,7 @@ var XMLObjectifier = (function() {
                         //Set Helper functions (contains, indexOf, sort, etc);
                         if(!obj[elemName].contains) {
                            setHelpers(obj[elemName]);
-                        }   
+                        }
                      cName = elemName;
                      if(cnode.hasChildNodes()) {
                         setObjects(tObj, cnode); //Recursive Call
@@ -381,16 +381,16 @@ var XMLObjectifier = (function() {
                   }
                } while(n++ < nodeCount);
             }
-         }         
+         }
          //RUN
          setObjects(tmpObj, xroot);
          //Clean-up memmory
          xdoc = null;
          xroot = null;
-         return tmpObj;   
+         return tmpObj;
       } catch(e) {
-            return null;   
-      }   
+            return null;
+      }
    },
 
    //Converts Text to XML DOM

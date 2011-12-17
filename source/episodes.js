@@ -1,5 +1,5 @@
 enyo.kind({
-	name: "episodesList", 
+	name: "episodesList",
 	kind: enyo.VFlexBox,
 	events: {
 		onSelect: ""

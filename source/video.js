@@ -1,5 +1,5 @@
 enyo.kind({
-	name: "avis.video", 
+	name: "avis.video",
 	kind: enyo.VFlexBox,
 	published: {
 		episodeName: ""
@@ -39,11 +39,11 @@ enyo.kind({
 	},
 	setListeners: function(inSender) {
 		var thisToPass = this;
-				
+
 		this.$.video.node.addEventListener('loadedmetadata', function(e) {
 			var thisObj = thisToPass;
 			var videoNode = thisObj.$.video.node;
-			
+
 			thisObj.$.video.play();
 			thisObj.$.spinnerLarge.hide();
 			thisObj.$.video.show();
@@ -51,29 +51,29 @@ enyo.kind({
 			thisObj.$.videoControls.setDisabled(false);
 			thisObj.$.videoControls.setDuration(videoNode.duration);
 		}, false);
-		
+
 		this.$.video.node.addEventListener('timeupdate', function(e) {
 			var thisObj = thisToPass;
 			var videoNode = thisObj.$.video.node;
-			
+
 			thisObj.$.videoControls.updateCurrentTimePosition(videoNode.currentTime);
 		}, false);
-		
+
 		this.$.video.node.addEventListener('progress', function(e) {
 			var thisObj = thisToPass;
 			var videoNode = thisObj.$.video.node;
-			
+
 			var buf = videoNode.buffered;
 			var numRanges = buf.length;
 			if (buf.length == 1) {
 				var buffered = buf.end(0);
 				thisObj.$.videoControls.updateBufferedPosition(buffered);
-			} else {thisObj.$.videoControls.updateBufferedPosition(buf.end(buf.length - 1));}		
+			} else {thisObj.$.videoControls.updateBufferedPosition(buf.end(buf.length - 1));}
 		}, false);
-		
+
 		this.$.video.node.addEventListener('error', function(e) {
 			var thisObj = thisToPass;
-			
+
 			// thisObj.$.videoMessage.setContent("Source not available. Try the SD resolution");
 			// 			thisObj.$.videoMessage.show();
 			// 			thisObj.$.spinnerLarge.hide();
@@ -95,8 +95,8 @@ enyo.kind({
 			this.$.spinnerLarge.show();
 			this.$.video.hide();
 		}
-		
-		
+
+
 		switch(value) {
 			case 0:
 				this.$.audioButton.setSrc("images/audio.png");
@@ -117,7 +117,7 @@ enyo.kind({
 				if(!(this.episodeName === "")){this.$.video.setSrc(this.video[1]);}
 				break;
 		}
-		
+
 		enyo.windows.setWindowProperties(enyo.windows.getActiveWindow(), {'blockScreenTimeout': true});
 		this.resizeVideo();
 	},

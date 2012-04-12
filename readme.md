@@ -1,5 +1,6 @@
 TWiT-Player 0.1.0
 =================
+## No longer being maintained
 
 All active TWiT shows available in 864x480, 640x368 and audio.
 

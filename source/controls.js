@@ -1,5 +1,5 @@
 enyo.kind({
-	name: "videoControls", 
+	name: "videoControls",
 	kind: enyo.VFlexBox,
 	events: {
 		onPlay: "",
@@ -9,7 +9,7 @@ enyo.kind({
 	},
 	published: {
 		playing: false,
-		disabled: true, 
+		disabled: true,
 		duration: 0
 	},
 	components: [
@@ -79,7 +79,7 @@ enyo.kind({
 			this.doPlay(true);
 		}
 	},
-	positionChanging: function(inSender, inPos) {		
+	positionChanging: function(inSender, inPos) {
 		this.doPause(false);
 		var time = inPos/(100/this.duration);
 		this.doChangeCurrentTime(time);
@@ -98,7 +98,7 @@ enyo.kind({
 	    var divisor_for_minutes = secs % (60 * 60);
 	    var minutes = Math.floor(divisor_for_minutes / 60);
 	    var divisor_for_seconds = divisor_for_minutes % 60;
-	    var seconds = Math.ceil(divisor_for_seconds);			
+	    var seconds = Math.ceil(divisor_for_seconds);
 		var time = this.pad(hours, 2) + ":" + this.pad(minutes, 2) + ":" + this.pad(seconds, 2);
 		return time;
 	},

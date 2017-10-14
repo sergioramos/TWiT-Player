@@ -1,5 +1,5 @@
 enyo.kind({
-	name: "avis", 
+	name: "avis",
 	kind: enyo.VFlexBox,
 	published: {
 		shows: []
@@ -21,7 +21,7 @@ enyo.kind({
 					{kind: "avis.video", flex: 1}
 				]}
 			]}
-		]},		
+		]},
 		{kind: "avis.rss", name: "rss", onSuccess: "gotShows", onMetadata: "setProgressData", onIncrement: "setProgressPos"},
 		{kind: "AppMenu", }
 	],
@@ -41,18 +41,18 @@ enyo.kind({
 		this.destroy();
 	},
 	setProgressData: function(inSender, inMax) {
-		this.$.progress.setMaximum(inMax);	
+		this.$.progress.setMaximum(inMax);
 	},
 	setProgressPos: function(inSender, inPos) {
 		this.$.progress.setPosition(inPos);
 	},
 	gotShows: function(inSender, inResult) {
 		var favicons = [];
-		
+
 		for(var i=0; i<inResult.length; i++) {
 			favicons.push(inResult[i].favicon);
 		}
-		
+
 		this.$.showsList.setFavicons(favicons);
 		this.$.pane.selectViewByIndex(1);
 		this.setShows(inResult);
@@ -70,7 +70,7 @@ enyo.kind({
 		for(var i=0; i<this.shows[inRow].video.length; i++) {
 			titles.push(this.shows[inRow].video[i].title[0].Text.replace(this.shows[inRow].title+ " ", ""));
 		}
-		
+
 		this.$.episodesList.setShowName(this.shows[inRow].name);
 		this.$.episodesList.setTitles(titles);
 		this.selectedShowRow = inRow;
